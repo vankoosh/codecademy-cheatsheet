@@ -1,5 +1,5 @@
 import './App.css';
-import Parent from './src/components/Parent';
+import Parent from './components/Parent/Parent';
 
 function App() {
   return (
