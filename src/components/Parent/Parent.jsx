@@ -508,6 +508,10 @@ export default function Parent() {
           >
             Modules
           </li>
+          {/* CURRYING ARTICLE */}
+          <li>
+            <a href="./currying.html">CURRYING ARTICLE</a>
+          </li>
         </ul>
       </nav>
       <div className="card-container">
@@ -525,9 +529,17 @@ export default function Parent() {
           );
         })}
       </div>
-      {modalState ? <span className="modal" style={{display:"flex"}} onClick={()=>{setModalState(false)}}>
-        <img src={clickedImg} alt="" className="modal-img" />
-      </span> : null}
+      {modalState ? (
+        <span
+          className="modal"
+          style={{ display: "flex" }}
+          onClick={() => {
+            setModalState(false);
+          }}
+        >
+          <img src={clickedImg} alt="" className="modal-img" />
+        </span>
+      ) : null}
     </>
   );
 }
