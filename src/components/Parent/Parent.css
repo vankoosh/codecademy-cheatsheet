@@ -8,6 +8,10 @@ a:link {
   text-decoration: none;
 }
 
+.underline {
+  border-bottom: 1px solid black;
+}
+
 nav {
   position: fixed;
   top: 0;

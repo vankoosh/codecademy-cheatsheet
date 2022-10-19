@@ -19,9 +19,9 @@ export default function Parent() {
     { id: "Break Keyword", count: "5/5", src: "/imgs/LOOPS/BreakKeyword.jpg" },
   ]);
 
-  const [clickedImg, setClickedImg] = useState("");
-  const [modalState, setModalState] = useState(false);
-  const [active, setActive] = useState(false);
+  const [clickedImg, setClickedImg] = useState("")
+  const [modalState, setModalState] = useState(false)
+  const [active, setActive] = useState("Loops")
 
   const onClick = (e) => {
     // const src = e.target.getAttribute("src");
@@ -31,6 +31,12 @@ export default function Parent() {
     setModalState(true);
     console.log(`Clicked on img ${clickedImg}`);
   };
+
+  function underline(t) {
+    if (!t.target.hasAttribute("class")) {
+      t.target.setAttribute("class", "underline")
+    } 
+  }
 
   const onMouseEnter = (e) => {
     e.target.style.width = "33vw";
@@ -49,7 +55,7 @@ export default function Parent() {
         <ul>
           {/* LOOPS */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: "For Loop",
@@ -77,13 +83,15 @@ export default function Parent() {
                   src: "/imgs/LOOPS/BreakKeyword.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText)
             }}
           >
             Loops
           </li>
           {/* ARRAYS */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 { id: 1, count: "1/4", src: "/imgs/ARRAYS/Arrays.jpg" },
                 {
@@ -102,13 +110,15 @@ export default function Parent() {
                   src: "/imgs/ARRAYS/NestedLoop-ComparingTwoArrays.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             Arrays
           </li>
           {/* ARRAY ITERATORS */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: 1,
@@ -141,13 +151,15 @@ export default function Parent() {
                   src: "/imgs/ARRAY-ITERATORS/IteratorsExamples.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             Array Iterators
           </li>
           {/* CONDITIONALS */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: 1,
@@ -175,13 +187,15 @@ export default function Parent() {
                   src: "/imgs/CONDITIONALS/Short-circuitOREvaluation.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             Conditionals
           </li>
           {/* OBJECTS */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: 1,
@@ -249,13 +263,15 @@ export default function Parent() {
                   src: "/imgs/OBJECTS/thisAndArrowFunctions.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             Objects
           </li>
           {/* FUNCTIONS */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 { id: "1/6", src: "/imgs/FUNCTIONS/FunctionDeclaration.jpg" },
                 {
@@ -279,13 +295,15 @@ export default function Parent() {
                   src: "/imgs/FUNCTIONS/ReturnKeyword.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             Functions
           </li>
           {/* CLASSES */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 { id: "1/8", src: "/imgs/CLASSES/Classes.jpg" },
                 {
@@ -317,13 +335,15 @@ export default function Parent() {
                   src: "/imgs/CLASSES/ExcersiseWithDefaultParams.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             Classes
           </li>
           {/* FETCH */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: "1/11",
@@ -370,13 +390,15 @@ export default function Parent() {
                   src: "/imgs/FETCH/asyncAwaitPOSTwithFetch()Example.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             FETCH
           </li>
           {/* ASYNC AWAIT */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: "1/9",
@@ -415,13 +437,15 @@ export default function Parent() {
                   src: "/imgs/ASYNC-AWAIT/AwaitPromise.all().jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             ASYNC - AWAIT
           </li>
           {/* PROMISES */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: "1/7",
@@ -452,13 +476,15 @@ export default function Parent() {
                   src: "/imgs/PROMISES/Promise.all().jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             PROMISES
           </li>
           {/* XHR GET-POST */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: "1/7",
@@ -489,13 +515,15 @@ export default function Parent() {
                   src: "/imgs/XHR-GET-POST/XHRPOSTExample.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             XHR GET-POST
           </li>
           {/* MODULES */}
           <li
-            onClick={() => {
+            onClick={(e) => {
               setTopic([
                 {
                   id: "1/7",
@@ -510,6 +538,8 @@ export default function Parent() {
                   src: "/imgs/MODULES/Export-ImportExcercise.jpg",
                 },
               ]);
+              underline(e);
+              setActive(e.target.innerText);
             }}
           >
             Modules
@@ -526,7 +556,7 @@ export default function Parent() {
             <Card
               props={img}
               key={img.id}
-              index={index}
+              index={index + 1}
               length={topic.length}
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
