@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./Parent.css";
 import Card from "../Card/Card";
 
-// TODO  add modal to small picss
+// TODO  add modal to small pics
+
+
 
 export default function Parent() {
   const [topic, setTopic] = useState([
@@ -19,6 +21,7 @@ export default function Parent() {
 
   const [clickedImg, setClickedImg] = useState("");
   const [modalState, setModalState] = useState(false);
+  const [active, setActive] = useState(false);
 
   const onClick = (e) => {
     // const src = e.target.getAttribute("src");
@@ -36,6 +39,9 @@ export default function Parent() {
   const onMouseLeave = (e) => {
     e.target.style.width = "22vw";
   };
+
+
+
 
   return (
     <>
