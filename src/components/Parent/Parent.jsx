@@ -55,6 +55,8 @@ export default function Parent() {
         <ul>
           {/* LOOPS */}
           <li
+            // TODO maybe something like this?
+            className={active=="Loops"?"undeline":""}
             onClick={(e) => {
               setTopic([
                 {
@@ -83,7 +85,7 @@ export default function Parent() {
                   src: "/imgs/LOOPS/BreakKeyword.jpg",
                 },
               ]);
-              underline(e);
+              underline(e);              
               setActive(e.target.innerText)
             }}
           >
