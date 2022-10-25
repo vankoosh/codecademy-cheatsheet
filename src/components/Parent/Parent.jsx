@@ -11,12 +11,12 @@ export default function Parent() {
     {
       id: "For Loop",
       count: "1/5",
-      src: "codecademy-cheatsheet/imgs/LOOPS/ForLoop.jpg",
+      src: require("https://github.com/vankoosh/codecademy-cheatsheet/blob/master/public/imgs/LOOPS/ForLoop.jpg"),
     },
     {
       id: "While Loop",
       count: "2/5",
-      src: "codecademy-cheatsheet/imgs/LOOPS/WhileLoop.jpg",
+      src: require("https://github.com/vankoosh/codecademy-cheatsheet/blob/master/public/imgs/LOOPS/WhileLoop.jpg"),
     },
     {
       id: "Do While Loop",
