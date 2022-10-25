@@ -8,9 +8,9 @@ import Card from "../Card/Card";
 
 export default function Parent() {
   const [topic, setTopic] = useState([
-    { id: "For Loop", count: "1/5", src: "/imgs/LOOPS/ForLoop.jpg" },
-    { id: "While Loop", count: "2/5", src: "/imgs/LOOPS/WhileLoop.jpg" },
-    { id: "Do While Loop", count: "3/5", src: "/imgs/LOOPS/DoWhileLoop.jpg" },
+    { id: "For Loop", count: "1/5", src: "./imgs/LOOPS/ForLoop.jpg" },
+    { id: "While Loop", count: "2/5", src: "./imgs/LOOPS/WhileLoop.jpg" },
+    { id: "Do While Loop", count: "3/5", src: "./imgs/LOOPS/DoWhileLoop.jpg" },
     {
       id: "Nested Loop",
       count: "4/5",
