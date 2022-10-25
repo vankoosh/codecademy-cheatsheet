@@ -8,15 +8,31 @@ import Card from "../Card/Card";
 
 export default function Parent() {
   const [topic, setTopic] = useState([
-    { id: "For Loop", count: "1/5", src: "./imgs/LOOPS/ForLoop.jpg" },
-    { id: "While Loop", count: "2/5", src: "./imgs/LOOPS/WhileLoop.jpg" },
-    { id: "Do While Loop", count: "3/5", src: "./imgs/LOOPS/DoWhileLoop.jpg" },
+    {
+      id: "For Loop",
+      count: "1/5",
+      src: "codecademy-cheatsheet/imgs/LOOPS/ForLoop.jpg",
+    },
+    {
+      id: "While Loop",
+      count: "2/5",
+      src: "codecademy-cheatsheet/imgs/LOOPS/WhileLoop.jpg",
+    },
+    {
+      id: "Do While Loop",
+      count: "3/5",
+      src: "codecademy-cheatsheet/imgs/LOOPS/DoWhileLoop.jpg",
+    },
     {
       id: "Nested Loop",
       count: "4/5",
-      src: "/imgs/LOOPS/NestedLoop-ComparingTwoArrays.jpg",
+      src: "codecademy-cheatsheet/imgs/LOOPS/NestedLoop-ComparingTwoArrays.jpg",
     },
-    { id: "Break Keyword", count: "5/5", src: "/imgs/LOOPS/BreakKeyword.jpg" },
+    {
+      id: "Break Keyword",
+      count: "5/5",
+      src: "codecademy-cheatsheet/imgs/LOOPS/BreakKeyword.jpg",
+    },
   ]);
 
   const [clickedImg, setClickedImg] = useState("")
@@ -57,27 +73,27 @@ export default function Parent() {
                 {
                   id: "For Loop",
                   count: "1/5",
-                  src: "/imgs/LOOPS/ForLoop.jpg",
+                  src: "codecademy-cheatsheet/imgs/LOOPS/ForLoop.jpg",
                 },
                 {
                   id: "While Loop",
                   count: "2/5",
-                  src: "/imgs/LOOPS/WhileLoop.jpg",
+                  src: "codecademy-cheatsheet/imgs/LOOPS/WhileLoop.jpg",
                 },
                 {
                   id: "Do While Loop",
                   count: "3/5",
-                  src: "/imgs/LOOPS/DoWhileLoop.jpg",
+                  src: "codecademy-cheatsheet/imgs/LOOPS/DoWhileLoop.jpg",
                 },
                 {
                   id: "Nested Loop",
                   count: "4/5",
-                  src: "/imgs/LOOPS/NestedLoop-ComparingTwoArrays.jpg",
+                  src: "codecademy-cheatsheet/imgs/LOOPS/NestedLoop-ComparingTwoArrays.jpg",
                 },
                 {
                   id: "Break Keyword",
                   count: "5/5",
-                  src: "/imgs/LOOPS/BreakKeyword.jpg",
+                  src: "codecademy-cheatsheet/imgs/LOOPS/BreakKeyword.jpg",
                 },
               ]);
               underline(e);
