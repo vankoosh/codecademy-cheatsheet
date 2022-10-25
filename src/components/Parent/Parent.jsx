@@ -24,10 +24,7 @@ export default function Parent() {
   const [active, setActive] = useState("Loops")
 
   const onClick = (e) => {
-    // const src = e.target.getAttribute("src");
     setClickedImg(e.target.getAttribute("src"));
-    // const modal = document.querySelector(".modal"); 
-    // modal.style.display = "flex";
     setModalState(true);
     console.log(`Clicked on img ${clickedImg}`);
   };
@@ -50,7 +47,7 @@ export default function Parent() {
 
 
   return (
-    <>
+    <main>
       <nav>
         <ul>
           {/* LOOPS */}
@@ -87,7 +84,7 @@ export default function Parent() {
               setActive(e.target.innerText);
             }}
             // TODO maybe something like this?
-            className={active == "Loops" ? "underline" : ""}
+            className={active === "Loops" ? "underline" : ""}
           >
             Loops
           </li>
@@ -115,7 +112,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "Arrays" ? "underline" : ""}
+            className={active === "Arrays" ? "underline" : ""}
           >
             Arrays
           </li>
@@ -157,7 +154,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "Array Iterators" ? "underline" : ""}
+            className={active === "Array Iterators" ? "underline" : ""}
           >
             Array Iterators
           </li>
@@ -194,7 +191,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "Conditionals" ? "underline" : ""}
+            className={active === "Conditionals" ? "underline" : ""}
           >
             Conditionals
           </li>
@@ -271,7 +268,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "Objects" ? "underline" : ""}
+            className={active === "Objects" ? "underline" : ""}
             Conditionals
           >
             Objects
@@ -305,7 +302,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "Functions" ? "underline" : ""}
+            className={active === "Functions" ? "underline" : ""}
           >
             Functions
           </li>
@@ -346,7 +343,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "Classes" ? "underline" : ""}
+            className={active === "Classes" ? "underline" : ""}
           >
             Classes
           </li>
@@ -402,7 +399,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "FETCH" ? "underline" : ""}
+            className={active === "FETCH" ? "underline" : ""}
           >
             FETCH
           </li>
@@ -450,7 +447,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "ASYNC - AWAIT" ? "underline" : ""}
+            className={active === "ASYNC - AWAIT" ? "underline" : ""}
           >
             ASYNC - AWAIT
           </li>
@@ -490,7 +487,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "PROMISES" ? "underline" : ""}
+            className={active === "PROMISES" ? "underline" : ""}
           >
             PROMISES
           </li>
@@ -530,7 +527,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "XHR GET-POST" ? "underline" : ""}
+            className={active === "XHR GET-POST" ? "underline" : ""}
           >
             XHR GET-POST
           </li>
@@ -554,7 +551,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            className={active == "Modules" ? "underline" : ""}
+            className={active === "Modules" ? "underline" : ""}
           >
             Modules
           </li>
@@ -590,6 +587,6 @@ export default function Parent() {
           <img src={clickedImg} alt="" className="modal-img" />
         </span>
       ) : null}
-    </>
+    </main>
   );
 }
