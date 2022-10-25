@@ -55,8 +55,6 @@ export default function Parent() {
         <ul>
           {/* LOOPS */}
           <li
-            // TODO maybe something like this?
-            className={active=="Loops"?"undeline":""}
             onClick={(e) => {
               setTopic([
                 {
@@ -85,9 +83,11 @@ export default function Parent() {
                   src: "/imgs/LOOPS/BreakKeyword.jpg",
                 },
               ]);
-              underline(e);              
-              setActive(e.target.innerText)
+              underline(e);
+              setActive(e.target.innerText);
             }}
+            // TODO maybe something like this?
+            className={active == "Loops" ? "underline" : ""}
           >
             Loops
           </li>
@@ -115,6 +115,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "Arrays" ? "underline" : ""}
           >
             Arrays
           </li>
@@ -156,6 +157,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "Array Iterators" ? "underline" : ""}
           >
             Array Iterators
           </li>
@@ -192,6 +194,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "Conditionals" ? "underline" : ""}
           >
             Conditionals
           </li>
@@ -268,6 +271,8 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "Objects" ? "underline" : ""}
+            Conditionals
           >
             Objects
           </li>
@@ -300,6 +305,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "Functions" ? "underline" : ""}
           >
             Functions
           </li>
@@ -340,6 +346,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "Classes" ? "underline" : ""}
           >
             Classes
           </li>
@@ -395,6 +402,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "FETCH" ? "underline" : ""}
           >
             FETCH
           </li>
@@ -442,6 +450,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "ASYNC - AWAIT" ? "underline" : ""}
           >
             ASYNC - AWAIT
           </li>
@@ -481,6 +490,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "PROMISES" ? "underline" : ""}
           >
             PROMISES
           </li>
@@ -520,6 +530,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "XHR GET-POST" ? "underline" : ""}
           >
             XHR GET-POST
           </li>
@@ -543,6 +554,7 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
+            className={active == "Modules" ? "underline" : ""}
           >
             Modules
           </li>
