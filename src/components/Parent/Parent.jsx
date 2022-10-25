@@ -108,21 +108,25 @@ export default function Parent() {
           <li
             onClick={(e) => {
               setTopic([
-                { id: 1, count: "1/4", src: "/imgs/ARRAYS/Arrays.jpg" },
+                {
+                  id: 1,
+                  count: "1/4",
+                  src: "codecademy-cheatsheet/imgs/ARRAYS/Arrays.jpg",
+                },
                 {
                   id: 2,
                   count: "2/4",
-                  src: "/imgs/ARRAYS/ChangeArrayElementsByAssignment.jpg",
+                  src: "codecademy-cheatsheet/imgs/ARRAYS/ChangeArrayElementsByAssignment.jpg",
                 },
                 {
                   id: 3,
                   count: "3/4",
-                  src: "/imgs/ARRAYS/AccesingIndexOfNestedArrays.jpg",
+                  src: "codecademy-cheatsheet/imgs/ARRAYS/AccesingIndexOfNestedArrays.jpg",
                 },
                 {
                   id: 4,
                   count: "4/4",
-                  src: "/imgs/ARRAYS/NestedLoop-ComparingTwoArrays.jpg",
+                  src: "codecademy-cheatsheet/imgs/ARRAYS/NestedLoop-ComparingTwoArrays.jpg",
                 },
               ]);
               underline(e);
