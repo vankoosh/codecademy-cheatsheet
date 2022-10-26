@@ -429,39 +429,39 @@ export default function Parent() {
               setTopic([
                 {
                   id: "1/9",
-                  src: "/imgs/ASYNC-AWAIT/AsyncAwaitIntroduction.jpg",
+                  src: "imgs/ASYNC-AWAIT/AsyncAwaitIntroduction.jpg",
                 },
                 {
                   id: "2/9",
-                  src: "/imgs/ASYNC-AWAIT/AsyncAwaitReview.jpg",
+                  src: "imgs/ASYNC-AWAIT/AsyncAwaitReview.jpg",
                 },
                 {
                   id: "3/9",
-                  src: "/imgs/ASYNC-AWAIT/AsyncKeyword.jpg",
+                  src: "imgs/ASYNC-AWAIT/AsyncKeyword.jpg",
                 },
                 {
                   id: "4/9",
-                  src: "/imgs/ASYNC-AWAIT/AwaitOperator.jpg",
+                  src: "imgs/ASYNC-AWAIT/AwaitOperator.jpg",
                 },
                 {
                   id: "5/9",
-                  src: "/imgs/ASYNC-AWAIT/WritinAsyncFunctions.jpg",
+                  src: "imgs/ASYNC-AWAIT/WritinAsyncFunctions.jpg",
                 },
                 {
                   id: "6/9",
-                  src: "/imgs/ASYNC-AWAIT/HandlingIndependentPromises.jpg",
+                  src: "imgs/ASYNC-AWAIT/HandlingIndependentPromises.jpg",
                 },
                 {
                   id: "7/9",
-                  src: "/imgs/ASYNC-AWAIT/HandlingChainedPromises.jpg",
+                  src: "imgs/ASYNC-AWAIT/HandlingChainedPromises.jpg",
                 },
                 {
                   id: "8/9",
-                  src: "/imgs/ASYNC-AWAIT/HandlingErrors.jpg",
+                  src: "imgs/ASYNC-AWAIT/HandlingErrors.jpg",
                 },
                 {
                   id: "9/9",
-                  src: "/imgs/ASYNC-AWAIT/AwaitPromise.all().jpg",
+                  src: "imgs/ASYNC-AWAIT/AwaitPromise.all().jpg",
                 },
               ]);
               underline(e);
@@ -477,31 +477,31 @@ export default function Parent() {
               setTopic([
                 {
                   id: "1/7",
-                  src: "/imgs/PROMISES/Promises Review.jpg",
+                  src: "imgs/PROMISES/Promises Review.jpg",
                 },
                 {
                   id: "2/7",
-                  src: "/imgs/PROMISES/ConstructingAPromiseObject.jpg",
+                  src: "imgs/PROMISES/ConstructingAPromiseObject.jpg",
                 },
                 {
                   id: "3/7",
-                  src: "/imgs/PROMISES/HandlingPromisesWithCallbacks.jpg",
+                  src: "imgs/PROMISES/HandlingPromisesWithCallbacks.jpg",
                 },
                 {
                   id: "4/7",
-                  src: "/imgs/PROMISES/ConsumingPromisesWith.then()and.catch().jpg",
+                  src: "imgs/PROMISES/ConsumingPromisesWith.then()and.catch().jpg",
                 },
                 {
                   id: "5/7",
-                  src: "/imgs/PROMISES/ConsumingPromisesWith.catch().jpg",
+                  src: "imgs/PROMISES/ConsumingPromisesWith.catch().jpg",
                 },
                 {
                   id: "6/7",
-                  src: "/imgs/PROMISES/ChainingMultiplePromises.jpg",
+                  src: "imgs/PROMISES/ChainingMultiplePromises.jpg",
                 },
                 {
                   id: "7/7",
-                  src: "/imgs/PROMISES/Promise.all().jpg",
+                  src: "imgs/PROMISES/Promise.all().jpg",
                 },
               ]);
               underline(e);
@@ -517,31 +517,31 @@ export default function Parent() {
               setTopic([
                 {
                   id: "1/7",
-                  src: "/imgs/XHR-GET-POST/XHRReview.jpg",
+                  src: "imgs/XHR-GET-POST/XHRReview.jpg",
                 },
                 {
                   id: "2/7",
-                  src: "/imgs/XHR-GET-POST/MakingXHRGETDiagram.jpg",
+                  src: "imgs/XHR-GET-POST/MakingXHRGETDiagram.jpg",
                 },
                 {
                   id: "3/7",
-                  src: "/imgs/XHR-GET-POST/XHRGETSyntax.jpg",
+                  src: "imgs/XHR-GET-POST/XHRGETSyntax.jpg",
                 },
                 {
                   id: "4/7",
-                  src: "/imgs/XHR-GET-POST/XHRGETExample.jpg",
+                  src: "imgs/XHR-GET-POST/XHRGETExample.jpg",
                 },
                 {
                   id: "5/7",
-                  src: "/imgs/XHR-GET-POST/XHRGETExample II.jpg",
+                  src: "imgs/XHR-GET-POST/XHRGETExample II.jpg",
                 },
                 {
                   id: "6/7",
-                  src: "/imgs/XHR-GET-POST/MakingXHRPOSTDiagram.jpg",
+                  src: "imgs/XHR-GET-POST/MakingXHRPOSTDiagram.jpg",
                 },
                 {
                   id: "7/7",
-                  src: "/imgs/XHR-GET-POST/XHRPOSTExample.jpg",
+                  src: "imgs/XHR-GET-POST/XHRPOSTExample.jpg",
                 },
               ]);
               underline(e);
@@ -557,15 +557,15 @@ export default function Parent() {
               setTopic([
                 {
                   id: "1/7",
-                  src: "/imgs/MODULES/NodeModulesInJS.jpg",
+                  src: "imgs/MODULES/NodeModulesInJS.jpg",
                 },
                 {
                   id: "2/7",
-                  src: "/imgs/MODULES/BrowserModulesInJS.jpg",
+                  src: "imgs/MODULES/BrowserModulesInJS.jpg",
                 },
                 {
                   id: "3/7",
-                  src: "/imgs/MODULES/Export-ImportExcercise.jpg",
+                  src: "imgs/MODULES/Export-ImportExcercise.jpg",
                 },
               ]);
               underline(e);
