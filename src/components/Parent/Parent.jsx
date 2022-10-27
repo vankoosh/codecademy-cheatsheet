@@ -99,7 +99,6 @@ export default function Parent() {
               underline(e);
               setActive(e.target.innerText);
             }}
-            // TODO maybe something like this?
             className={active === "Loops" ? "underline" : ""}
           >
             Loops
