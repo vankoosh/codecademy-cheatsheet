@@ -47,8 +47,13 @@ nav ul li:active, nav ul a:active {
 .card-container {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 3rem;
+}
+@media screen and (min-width: 900px) {
+  .card-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 .card-container .modal {
   position: absolute;

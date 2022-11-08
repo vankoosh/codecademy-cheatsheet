@@ -56,8 +56,12 @@ nav {
 .card-container {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: $nav-height;
+
+  @media screen and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 
   .modal{
     position: absolute;
