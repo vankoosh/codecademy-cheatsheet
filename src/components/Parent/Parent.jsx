@@ -1,10 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Parent.css";
 import Card from "../Card/Card";
-
-// TODO  add modal to small pics
-
-
 
 export default function Parent() {
   const [topic, setTopic] = useState([
@@ -48,7 +44,7 @@ export default function Parent() {
   function underline(t) {
     if (!t.target.hasAttribute("class")) {
       t.target.setAttribute("class", "underline")
-    } 
+    }
   }
 
   const onMouseEnter = (e) => {
@@ -58,9 +54,6 @@ export default function Parent() {
   const onMouseLeave = (e) => {
     e.target.style.width = "22vw";
   };
-
-
-
 
   return (
     <main>
